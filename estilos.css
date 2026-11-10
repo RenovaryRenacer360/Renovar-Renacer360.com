@@ -343,10 +343,21 @@ h1 span {
     text-shadow: 2px 2px 5px black;
     border-bottom: 4px solid #f2b522;
     transition: 0.3s;
+
+
+display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+.ver-mas {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: bold;
 }
 
+
 .tarjeta:hover {
-    transform: translateY(-7px);
+    transform: translateY(-8px);
 }
 
 .tarjeta .numero {
