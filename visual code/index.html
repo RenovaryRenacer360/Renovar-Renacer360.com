@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="estilos.css">
      <link rel="icon" type="image/jpeg" href="icono.png">
 
+
 </head>
 
 <body>
@@ -27,6 +28,7 @@
             <a href="#servicios">Servicios</a>
             <a href="#proyectos">Proyectos</a>
             <a href="#contacto">Contacto</a>
+              <a href="#calificaciones">Califícanos</a>
         </nav>
 
 </header>
@@ -78,21 +80,7 @@
 
     </section>
 
-    <!-- SERVICIOS -->
-     <li class="menu-desplegable">
-    <button class="boton-servicios" id="botonServicios">
-        Servicios <span>⌄</span>
-    </button>
 
-    <div class="submenu-servicios" id="submenuServicios">
-        <a href="#PINTURA">PINTURA</a>
-        <a href="#DRYWALLYPVC">DRYWALL Y PVC</a>
-        <a href="#PISOSLAMINADOSYPISOSPVC">PISOS LAMINADOS Y PISOS PVC</a>
-        <a href="#ELECTRICIDAD">ELECTRICIDAD</a>
-        <a href="#ORNAMENTACION">ORNAMENTACION</a>
-        <a href="#PLOMERIA">PLOMERIA</a>
-    </div>
-</li>
     <section class="seccion servicios" id="servicios">
 
         <p class="etiqueta">LO QUE HACEMOS</p>
@@ -212,6 +200,67 @@
     </section>
 
     <!-- PIE DE PÁGINA -->
+
+<!-- CALIFICACIONES -->
+<section class="seccion calificaciones" id="calificaciones">
+
+    <p class="etiqueta">TU OPINIÓN ES IMPORTANTE</p>
+
+    <h2>¿Cómo fue tu experiencia con nosotros?</h2>
+
+    <p class="introduccion">
+        En RENOVAR & RENACER 360 queremos conocer tu opinión.
+        Déjanos tu calificación y ayúdanos a mejorar.
+    </p>
+
+    <div class="caja-calificacion">
+
+        <h3>Califica nuestro servicio</h3>
+
+        <div class="estrellas" id="estrellas">
+            <button type="button" data-valor="1" aria-label="1 estrella">★</button>
+            <button type="button" data-valor="2" aria-label="2 estrellas">★</button>
+            <button type="button" data-valor="3" aria-label="3 estrellas">★</button>
+            <button type="button" data-valor="4" aria-label="4 estrellas">★</button>
+            <button type="button" data-valor="5" aria-label="5 estrellas">★</button>
+        </div>
+
+        <p id="mensajeEstrellas">Selecciona una calificación</p>
+
+        <form id="formularioCalificacion">
+
+            <textarea
+                id="comentario"
+                placeholder="Escribe aquí tu opinión (opcional)..."
+                maxlength="500"></textarea>
+
+            <button type="submit" class="boton-calificar">
+                ENVIAR CALIFICACIÓN
+            </button>
+
+        </form>
+
+        <p id="mensajeEnvio"></p>
+
+    </div>
+
+    <div class="resumen-calificaciones">
+
+        <h3>Opiniones de nuestros visitantes</h3>
+
+        <div class="promedio">
+            <span id="promedio">0.0</span>
+            <span class="estrella-dorada">★</span>
+        </div>
+
+        <p id="totalCalificaciones">Todavía no hay calificaciones</p>
+
+        <div id="listaComentarios"></div>
+
+    </div>
+
+</section>
+
     <footer>
 
         <div class="logo">
@@ -225,7 +274,9 @@
 
     </footer>
 
-    <script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
