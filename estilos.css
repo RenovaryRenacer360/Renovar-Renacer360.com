@@ -432,10 +432,10 @@ footer p {
 .servicio > * {
     position: relative;
     z-index: 1;
-}
 
-.pintura {
-    background-image: url("Imagenes/fotopintura.jpeg");
+}
+.tarjeta.pintura {
+    background-image: url("./Imagenes/fotopintura.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -474,4 +474,69 @@ footer p {
     background-size: cover;
     background-position: center;
    background-repeat: no-repeat;
+}
+/* Adaptación para celulares */
+@media screen and (max-width: 768px) {
+
+    /* Evitar desplazamiento horizontal */
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    /* Contenedor de las tarjetas */
+    .tarjetas {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    /* Tarjetas */
+    .tarjeta {
+        width: 100%;
+        box-sizing: border-box;
+        min-height: 250px;
+    }
+
+    @media screen and (max-width: 768px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    html, body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .tarjetas {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        width: 100%;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .tarjeta {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin: 0;
+    }
+
+}
+    /* Imágenes */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .tarjeta {
+        background-size: cover;
+        background-position: center;
+    }
 }
