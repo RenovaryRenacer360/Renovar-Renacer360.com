@@ -435,42 +435,42 @@ footer p {
 }
 
 .pintura {
-    background-image: url("imagenes/fotopintura.jpeg");
+    background-image: url("Imagenes/fotopintura.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .drywall {
-    background-image: url("imagenes/driwall.jpeg");
+    background-image: url("Imagenes/driwall.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .pisos {
-    background-image: url("imagenes/pisos.jpeg");
+    background-image: url("Imagenes/pisos.jpeg");
         background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .electricidad {
-    background-image: url("imagenes/electricidad.jpeg");
+    background-image: url("Imagenes/electricidad.jpeg");
     background-size: cover;
     background-position: center;
    background-repeat: no-repeat;
 }
 
 .ornamentacion {
-    background-image: url("imagenes/ornamentacion.jpeg");
+    background-image: url("Imagenes/ornamentacion.jpeg");
     background-size: cover;
     background-position: center;
    background-repeat: no-repeat;
 }
 
 .plomeria {
-    background-image: url("imagenes/plomeria.jpeg");
+    background-image: url("Imagenes/plomeria.jpeg");
     background-size: cover;
     background-position: center;
    background-repeat: no-repeat;
