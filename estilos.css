@@ -719,3 +719,43 @@ footer p {
 .instagram-portada {
     background-color: rgb(253, 0, 118);
 }
+
+
+/* ADAPTACIÓN DE REDES SOCIALES PARA CELULARES */
+
+@media screen and (max-width: 768px) {
+
+    .redes-portada {
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .redes-portada a {
+        width: 40px;
+        height: 40px;
+        font-size: 21px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .redes-portada {
+        right: 8px;
+        gap: 10px;
+    }
+
+    .redes-portada a {
+        width: 35px;
+        height: 35px;
+        font-size: 19px;
+    }
+
+}
