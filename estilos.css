@@ -680,6 +680,7 @@ footer p {
     }
 }
 
+
 .redes-portada {
     position: absolute;
     right: 35px;
@@ -716,36 +717,36 @@ footer p {
 .facebook-portada {
     background-color: #1877F2;
 }
+
 .instagram-portada {
     background-color: rgb(253, 0, 118);
 }
 
-
-
-
-/* REDES SOCIALES EN CELULARES */
+/*Celulares*/
 
 @media screen and (max-width: 768px) {
 
     .redes-portada {
-        position: static !important;
+        position: absolute !important;
+        top: auto !important;
+        bottom: 20px !important;
+        left: 0 !important;
+        right: 0 !important;
+
         transform: none !important;
 
         display: flex !important;
         flex-direction: row !important;
         justify-content: center !important;
-        align-items: center;
 
-        width: 100%;
-        margin: 25px 0 10px;
         gap: 18px;
+        width: 100%;
     }
 
     .redes-portada a {
         width: 42px;
         height: 42px;
         font-size: 21px;
-        flex-shrink: 0;
     }
 
 }
