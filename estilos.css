@@ -721,41 +721,32 @@ footer p {
 }
 
 
-/* ADAPTACIÓN DE REDES SOCIALES PARA CELULARES */
+
+/* REDES SOCIALES EN CELULARES */
 
 @media screen and (max-width: 768px) {
 
     .redes-portada {
-        position: absolute;
-        right: 12px;
-        top: 50%;
-        transform: translateY(-50%);
+        position: relative;
+        top: auto;
+        right: auto;
+        transform: none;
 
         display: flex !important;
-        flex-direction: column !important;
+        flex-direction: row !important;
+        justify-content: center;
         align-items: center;
-        gap: 12px;
+
+        gap: 18px;
+        margin: 25px auto;
+        width: 100%;
     }
 
     .redes-portada a {
-        width: 40px;
-        height: 40px;
+        width: 42px;
+        height: 42px;
         font-size: 21px;
-    }
-
-}
-
-@media screen and (max-width: 480px) {
-
-    .redes-portada {
-        right: 8px;
-        gap: 10px;
-    }
-
-    .redes-portada a {
-        width: 35px;
-        height: 35px;
-        font-size: 19px;
+        flex-shrink: 0;
     }
 
 }
