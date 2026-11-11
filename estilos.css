@@ -722,24 +722,23 @@ footer p {
 
 
 
+
 /* REDES SOCIALES EN CELULARES */
 
 @media screen and (max-width: 768px) {
 
     .redes-portada {
-        position: relative;
-        top: auto;
-        right: auto;
-        transform: none;
+        position: static !important;
+        transform: none !important;
 
         display: flex !important;
         flex-direction: row !important;
-        justify-content: center;
+        justify-content: center !important;
         align-items: center;
 
-        gap: 18px;
-        margin: 25px auto;
         width: 100%;
+        margin: 25px 0 10px;
+        gap: 18px;
     }
 
     .redes-portada a {
